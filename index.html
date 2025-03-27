@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Travel Finder</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Travel Destination Finder</h1>
+            <p>Discover your next adventure</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search destinations...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-continent="all">All</button>
+                <button class="filter-btn" data-continent="africa">Africa</button>
+                <button class="filter-btn" data-continent="asia">Asia</button>
+                <button class="filter-btn" data-continent="europe">Europe</button>
+                <button class="filter-btn" data-continent="north-america">North America</button>
+                <button class="filter-btn" data-continent="south-america">South America</button>
+                <button class="filter-btn" data-continent="australia">Australia/Oceania</button>
+                <button class="filter-btn" data-continent="antarctica">Antarctica</button>
+            </div>
+        </section>
+
+        <section class="destinations-grid" id="destinations-container">
+            <!-- Destinations will be loaded here -->
+        </section>
+
+        <div class="modal" id="destination-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div class="modal-body">
+                    <img id="modal-image" src="" alt="Destination">
+                    <div class="modal-info">
+                        <h2 id="modal-title"></h2>
+                        <p class="location" id="modal-location"></p>
+                        <div class="rating" id="modal-rating"></div>
+                        <p class="description" id="modal-description"></p>
+                        <div class="details">
+                            <p><strong>Best Time to Visit:</strong> <span id="modal-best-time"></span></p>
+                            <p><strong>Average Cost:</strong> <span id="modal-cost"></span></p>
+                            <p><strong>Travel Tips:</strong> <span id="modal-tips"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Travel Destination Finder| All rights reserved.</p>
+            <p>&copy; Brian B. Sila</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
