@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Global variables
     let allDestinations = [];
-    const fetch_url = 'http://localhost:3000/destinations'
+    const fetch_url = 'https://my-app-backend-kb5c.onrender.com/api/destinations'
     
     // Fetch destinations from JSON server
     async function fetchDestinations() {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const destinationCard = document.createElement('div');
             destinationCard.className = 'destination-card';
             destinationCard.innerHTML = `
-                <img src="images/${destination.image}" alt="${destination.name}" class="destination-img">
+                <img src="images/${destination.image}" alt="${destination.name}" class="destination-img" data-id="${destination.id}">
                 <div class="destination-info">
                     <h3>${destination.name}</h3>
                     <p class="location">${destination.country}, ${destination.continent}</p>
@@ -58,8 +58,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 showDestinationDetails(destinationId);
             });
         });
+
+        // Add event listeners to images
+        document.querySelectorAll('.destination-img').forEach(img => {
+            img.addEventListener('click', function() {
+                const destinationId = parseInt(this.getAttribute('data-id'));
+                showImageInModal(destinationId);
+            });
+        });
     }
-    
+
     // Get star rating HTML
     function getStarRating(rating) {
         const fullStars = Math.floor(rating);
@@ -98,6 +106,16 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('modal-cost').textContent = destination.averageCost;
         document.getElementById('modal-tips').textContent = destination.travelTips;
         
+        modal.style.display = 'block';
+    }
+
+    // Show image in modal
+    function showImageInModal(id) {
+        const destination = allDestinations.find(dest => dest.id === id);
+        if (!destination) return;
+
+        document.getElementById('modal-image').src = `images/${destination.image}`;
+        document.getElementById('modal-image').alt = destination.name;
         modal.style.display = 'block';
     }
     
