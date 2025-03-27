@@ -23,7 +23,7 @@ overwhelming to narrow down the options and find a destination that fits persona
 
 The Travel Destination Finder solves this problem by allowing users to search
 for destinations based on their interests. The app uses data from the GeoDB API
-to provide personalized city and country suggestions.
+to provide suggestions for cities and countries.
 
 ## Technologies Used in Development
 
@@ -45,25 +45,25 @@ The app has been developed by the use of the following technologies:
     cd Travel-destination-finder
 ```
 
-3. access the code:
+3. Access the code:
 ```bash
     code .
 ```
 # MVP Features
 
-**Personalized Destination Search:** Users can input their travel location
+**Personalized Destination Search** Users can input their travel location
 preferences (e.g., Africa, North America, Asia) to receive tailored destination
 recommendations.
 
 **Brief history of Destination Search:** Users receive a brief history of the travel destination search and what is expected from the country (e.g., the best time to travel, cost of travel)
 
-**Offer ravel tips relevant to the Destination Search:** The web application offers a relevant travel tip based of several factors (eg., Weather conditions and Time of travel)
+**Offer ravel tips relevant to the Destination Search:** The web application offers a relevant travel tip based of several factors (eg, Weather conditions and Time of travel)
 
 # Usage
 
 After installation of the web application, a user can:
  * **Explore Destinations:** Browse destination recommendations based on your preferences.
- * **Explore new intersts:** Browse new locations and discover underated locations or discover new interests.
+ * **Explore new interests:** Browse new locations and discover underrated locations or discover new interests.
 
 
 # Contributions
@@ -82,5 +82,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 # Acknowledgement
 
-Special thanks to *Brian Sila* for his cretivity and skills portraid in development of this project.
+Special thanks to *Brian Sila* for his creativity and skills portrayed in development of this project.
 
