@@ -1,18 +1,37 @@
 # Travel-destination-finder
 
-## Introduction
+## Table of Contents
 
-
- Global Travel Finder is an easy-to-use web application designed to help users discover the best travel destinations based on their preferences. Whether you’re looking for adventure, relaxation, or cultural experiences, this app provides personalized travel suggestions to make your next trip memorable.
-
- ## Table of Contents
-
+* Introduction
 * Installations
-* Features
+* MVP Features
 * Usage 
 * Contributions
 * License
 * Acknowledgement
+
+# Introduction
+
+Global Travel Finder is an easy-to-use web application designed to help users discover the best travel destinations based on their preferences. Whether you’re looking for adventure, relaxation, or cultural experiences, this app provides personalized travel suggestions to make your next trip memorable.
+
+## Problem statement
+
+Travel enthusiasts often struggle to find destinations that align with their specific interests, whether for a relaxing getaway, an adventurous trip, or a cultural exploration. With so many places to visit around the world, it can be
+overwhelming to narrow down the options and find a destination that fits personal preferences.
+
+## Solution
+
+The Travel Destination Finder solves this problem by allowing users to search
+for destinations based on their interests. The app uses data from the GeoDB API
+to provide personalized city and country suggestions.
+
+## Technologies Used in Development
+
+The app has been developed by the use of the following technologies:
+* HTML(Hypertext Markup Language)
+* CSS(Cascading Sttyle Sheets)
+* Javascript
+* db.json file containing external data 
 
 # Installation
 
@@ -40,11 +59,18 @@ recommendations.
 
 **Offer ravel tips relevant to the Destination Search:** The web application offers a relevant travel tip based of several factors (eg., Weather conditions and Time of travel)
 
+# Usage
+
+After installation of the web application, a user can:
+ * **Explore Destinations:** Browse destination recommendations based on your preferences.
+ * **Explore new intersts:** Browse new locations and discover underated locations or discover new interests.
+
+
 # Contributions
 
 We welcome contributions to the Travel Finder app! To contribute:
  * Fork the repository.
- * Create a new branch for your feature or bug fix (git checkout -b feature-branch).
+ * Create a new branch for your feature or bug fix (git checkout -b    feature-branch).
  * Make your changes and commit them (git commit -am 'Add new feature').
  * Push to the branch (git push origin feature-branch).
  * Open a pull request.
@@ -56,6 +82,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 # Acknowledgement
 
-
-
+Special thanks to *Brian Sila* for his cretivity and skills portraid in development of this project.
 
