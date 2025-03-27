@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const destinationCard = document.createElement('div');
             destinationCard.className = 'destination-card';
             destinationCard.innerHTML = `
-                <img src="images/${destination.image}" alt="${destination.name}" class="destination-img" data-id="${destination.id}">
+                <img src="${destination.image}" alt="${destination.name}" class="destination-img" data-id="${destination.id}">
                 <div class="destination-info">
                     <h3>${destination.name}</h3>
                     <p class="location">${destination.country}, ${destination.continent}</p>
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const destination = allDestinations.find(dest => dest.id === id);
         if (!destination) return;
         
-        document.getElementById('modal-image').src = `images/${destination.image}`;
+        document.getElementById('modal-image').src = `${destination.image}`;
         document.getElementById('modal-image').alt = destination.name;
         document.getElementById('modal-title').textContent = destination.name;
         document.getElementById('modal-location').textContent = `${destination.country}, ${destination.continent}`;
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const destination = allDestinations.find(dest => dest.id === id);
         if (!destination) return;
 
-        document.getElementById('modal-image').src = `images/${destination.image}`;
+        document.getElementById('modal-image').src = `${destination.image}`;
         document.getElementById('modal-image').alt = destination.name;
         modal.style.display = 'block';
     }
